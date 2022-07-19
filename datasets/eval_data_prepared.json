@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658217246127
+    "lastModifiedOn": 1658217553016
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,8 +86,38 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"age","type":"bigint"},
+      {"name":"default","type":"bigint"},
+      {"name":"balance","type":"bigint"},
+      {"name":"housing","type":"bigint"},
+      {"name":"loan","type":"bigint"},
+      {"name":"day","type":"bigint"},
+      {"name":"month","type":"bigint"},
+      {"name":"duration","type":"bigint"},
+      {"name":"campaign","type":"bigint"},
+      {"name":"job_admin.","type":"string"},
+      {"name":"job_blue-collar","type":"string"},
+      {"name":"job_entrepreneur","type":"string"},
+      {"name":"job_housemaid","type":"string"},
+      {"name":"job_management","type":"string"},
+      {"name":"job_retired","type":"string"},
+      {"name":"job_self-employed","type":"string"},
+      {"name":"job_services","type":"string"},
+      {"name":"job_student","type":"string"},
+      {"name":"job_technician","type":"string"},
+      {"name":"job_unemployed","type":"string"},
+      {"name":"job_unknown","type":"string"},
+      {"name":"marital_divorced","type":"string"},
+      {"name":"marital_married","type":"string"},
+      {"name":"marital_single","type":"string"},
+      {"name":"education_primary","type":"string"},
+      {"name":"education_secondary","type":"string"},
+      {"name":"education_tertiary","type":"string"},
+      {"name":"education_unknown","type":"string"},
+      {"name":"y","type":"string"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
