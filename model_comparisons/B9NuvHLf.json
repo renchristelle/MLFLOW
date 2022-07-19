@@ -13,6 +13,11 @@
       "isSelected": true,
       "color": "#ff7f0e",
       "isChampion": false
+    },
+    {
+      "smartId": "S-*-z2XWRhSG-LogisticRegression_v1",
+      "isSelected": true,
+      "isChampion": false
     }
   ],
   "displayParams": {
@@ -48,11 +53,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658214977341
+    "lastModifiedOn": 1658219559918
   },
   "creationTag": {
     "versionNumber": 0,
