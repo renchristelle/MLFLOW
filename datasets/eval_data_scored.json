@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658211978884
+    "lastModifiedOn": 1658212015888
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,8 +86,23 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"age","type":"string"},
+      {"name":"job","type":"string"},
+      {"name":"marital","type":"string"},
+      {"name":"education","type":"string"},
+      {"name":"default","type":"string"},
+      {"name":"balance","type":"string"},
+      {"name":"housing","type":"string"},
+      {"name":"loan","type":"string"},
+      {"name":"day","type":"string"},
+      {"name":"month","type":"string"},
+      {"name":"duration","type":"string"},
+      {"name":"campaign","type":"string"},
+      {"name":"y","type":"string"},
+      {"name":"prediction","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
