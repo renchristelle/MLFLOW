@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "catboost-uci-bank",
   "contentType": "mlflow_python/prediction/py_memory",
-  "activeVersion": "v03",
+  "activeVersion": "v02",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -2858,11 +2858,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658218392159
+    "lastModifiedOn": 1658218433126
   },
   "tags": [],
   "customFields": {},
