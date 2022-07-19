@@ -24,6 +24,10 @@
         {
           "ref": "training_data",
           "deps": []
+        },
+        {
+          "ref": "eval_data",
+          "deps": []
         }
       ]
     }
@@ -40,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658215754568
+    "lastModifiedOn": 1658215760952
   },
   "creationTag": {
     "versionNumber": 0,
