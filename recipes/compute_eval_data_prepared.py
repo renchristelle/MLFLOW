@@ -37,7 +37,7 @@ X.replace({"no": 0, "yes": 1}, inplace=True)
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
 
-eval_data_prepared_df = eval_data__df # For this sample code, simply copy input to output
+eval_data_prepared_df = pd.concat([X, y], axis=1) # For this sample code, simply copy input to output
 
 
 # Write recipe outputs
