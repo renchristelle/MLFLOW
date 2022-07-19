@@ -6,7 +6,7 @@
   },
   "backendType": "PY_MEMORY",
   "filterInputColumns": false,
-  "mlFlowOutputStyle": "RAW",
+  "mlFlowOutputStyle": "PARSED",
   "useGPU": false,
   "pythonBatchSize": 100000,
   "keptInputColumns": [],
