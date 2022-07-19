@@ -21,21 +21,16 @@
   "inputs": {},
   "outputs": {
     "main": {
-      "items": [
-        {
-          "ref": "VdHxdbkg",
-          "appendMode": false
-        }
-      ]
+      "items": []
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658215318916
+    "lastModifiedOn": 1658218292651
   },
   "creationTag": {
     "versionNumber": 0,
