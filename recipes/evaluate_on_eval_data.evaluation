@@ -64,7 +64,7 @@
     "maxReadUncompressedBytes": -1,
     "samplingMethod": "FULL"
   },
-  "computeAssertions": true,
+  "computeAssertions": false,
   "refitModel": false,
   "maxNbForecastHorizons": 0,
   "metrics": [
