@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658212015888
+    "lastModifiedOn": 1658212164559
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,9 @@
       {"name":"duration","type":"string"},
       {"name":"campaign","type":"string"},
       {"name":"y","type":"string"},
-      {"name":"prediction","type":"bigint"}
+      {"name":"prediction","type":"string"},
+      {"name":"proba_no","type":"double"},
+      {"name":"proba_yes","type":"double"}
     ],
     "userModified": false
   },
