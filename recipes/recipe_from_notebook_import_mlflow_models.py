@@ -72,7 +72,7 @@ else:
 MLFLOW_DIST_DIR = "/Users/christelleren/DSS/workspace/mlflow/mlflow-model-import/dist"
 CATBOOST_MODEL_DIR = "catboost-uci-bank-20220714-163303"
 
-version_id = "v00" # Change this to iterate to a new version
+version_id = "imported_model_v01" # Change this to iterate to a new version
 model_dir = os.path.join(MLFLOW_DIST_DIR, CATBOOST_MODEL_DIR)
 
 # Create version in SavedModel
@@ -88,7 +88,7 @@ for v in sm.list_versions():
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load MLflow model as a new version of DSS Saved Mdodel from DSS managed folder
-mlflow_version = sm.import_mlflow_version_from_managed_folder(version_id="imported_model_v01", 
+mlflow_version = sm.import_mlflow_version_from_managed_folder(version_id=version_id, 
                                                               managed_folder="cRBpHDVc", 
                                                               path="harizo_model",
                                                               code_env_name="py36_mlflow")
