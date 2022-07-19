@@ -1,21 +1,58 @@
 {
   "displayName": "catboost-uci-bank comparison",
   "predictionType": "BINARY_CLASSIFICATION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "S-*-VdHxdbkg-v02",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "ME-*-VDPcZyC2-t4552Ab9yblO",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
-    "yLabels": [],
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "evaluation:date",
+    "yLabels": [
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658214976559
+    "lastModifiedOn": 1658214977341
   },
   "creationTag": {
     "versionNumber": 0,
