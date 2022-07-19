@@ -18,7 +18,16 @@
   "maxRunningActivities": 0,
   "variables": {},
   "dkuProperties": [],
-  "inputs": {},
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "cRBpHDVc",
+          "deps": []
+        }
+      ]
+    }
+  },
   "outputs": {
     "main": {
       "items": [
@@ -31,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658220574413
+    "lastModifiedOn": 1658220584455
   },
   "creationTag": {
     "versionNumber": 0,
