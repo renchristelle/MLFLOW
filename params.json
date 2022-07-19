@@ -61,8 +61,9 @@
     },
     "codeEnvs": {
       "python": {
-        "mode": "INHERIT",
-        "preventOverride": false
+        "mode": "EXPLICIT_ENV",
+        "preventOverride": false,
+        "envName": "py36_mlflow"
       },
       "r": {
         "mode": "INHERIT",
@@ -185,6 +186,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1658215718543
   },
   "creationTag": {
     "versionNumber": 0,
