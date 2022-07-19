@@ -72,7 +72,7 @@ else:
 MLFLOW_DIST_DIR = "/Users/christelleren/DSS/workspace/mlflow/mlflow-model-import/dist"
 CATBOOST_MODEL_DIR = "catboost-uci-bank-20220714-163303"
 
-version_id = "imported_model_v01" # Change this to iterate to a new version
+version_id = "importedMLFlow_v01" # Change this to iterate to a new version
 model_dir = os.path.join(MLFLOW_DIST_DIR, CATBOOST_MODEL_DIR)
 
 # Create version in SavedModel
