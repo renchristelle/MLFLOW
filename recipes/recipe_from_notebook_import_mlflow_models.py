@@ -82,13 +82,16 @@ for v in sm.list_versions():
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load MLflow model as a new version of DSS Saved Mdodel from DSS gost local filesystem
-sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
-                                                path=model_dir,
-                                                code_env_name="py36_mlflow")
+#sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
+#                                                path=model_dir,
+#                                                code_env_name="py36_mlflow")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load MLflow model as a new version of DSS Saved Mdodel from DSS managed folder
-mlflow_version = saved_model.import_mlflow_version_from_managed_folder(version_id, 'managed_folder_id', path_of_model, 'code-environment-to-use')
+mlflow_version = sm.import_mlflow_version_from_managed_folder(version_id="test", 
+                                                              managed_folder="cRBpHDVc", 
+                                                              path="harizo_model",
+                                                              code_env_name="py36_mlflow")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Evaluate the version using the previously created Dataset
