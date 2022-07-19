@@ -12,7 +12,8 @@ from dataikuapi.dss.ml import DSSPredictionMLTaskSettings
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Step 1: train your model outside of DSS
-# 
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # Using the archive data and source files provided along with this notebook, perform the following actions *outside of DSS*:
 # * Create a virtual environment using Python >= 3.6 and install the packages listed in `requirement.txt`
 # * Activate the newly-created virtual environment
@@ -22,7 +23,8 @@ from dataikuapi.dss.ml import DSSPredictionMLTaskSettings
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Step 2: create the code env in DSS
-# 
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # In the *Administration > Code envs* section of DSS, crate a new code environment and add the packages listed in the archive's `requirement.txt` file (minus `pandas`), then build the code-env.
 # 
 # > **This notebook should be running using that code env ! **
@@ -56,42 +58,21 @@ else:
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # ## Step 4: import the evaluation dataset
-# 
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
 # Create a new Dataset in your DSS project by uploading `data/uci-bank-marketing/eval_data.csv`. Call this Dataset `eval_data`.
 # 
 # > **WARNING**: The evaluation Dataset **MUST** already be preprocessed using the exact same steps as in step 1 !
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
-# ## Step 5: Import mlflow model into a SavedModel version
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Change the following values to match your setup !
-MLFLOW_DIST_DIR = "/Users/hrajaona/Projects/repos/tce/demo-mlflow/mlflow-model-import/dist/"
-CATBOOST_MODEL_DIR = "catboost-uci-bank-20211206-151341"
-
-version_id = "v01" # Change this to iterate to a new version
-model_dir = os.path.join(MLFLOW_DIST_DIR, CATBOOST_MODEL_DIR)
-
-# Create version in SavedModel
-for v in sm.list_versions():
-    if v["id"] == version_id:
-        raise Exception("SavedModel version already exists! Choose a new version name.")
-
-sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
-                                                path=model_dir,
-                                                code_env_name="mlflow_catboost")
-# Evaluate the version using the previously created Dataset
-sm_version.set_core_metadata(target_column_name="y",
-                             class_labels=["no", "yes"],
-                             get_features_from_dataset="eval_data")
-sm_version.evaluate("eval_data")
+# ## Step 5: import mlflow model into a SavedModel version
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Change the following values to match your setup !
 MLFLOW_DIST_DIR = "/Users/christelleren/DSS/workspace/mlflow/mlflow-model-import/dist"
 CATBOOST_MODEL_DIR = "catboost-uci-bank-20220714-163303"
 
-version_id = "v02" # Change this to iterate to a new version
+version_id = "v00" # Change this to iterate to a new version
 model_dir = os.path.join(MLFLOW_DIST_DIR, CATBOOST_MODEL_DIR)
 
 # Create version in SavedModel
@@ -105,9 +86,11 @@ sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
                                                 path=model_dir,
                                                 code_env_name="py36_mlflow")
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load MLflow model as a new version of DSS Saved Mdodel from DSS managed folder
-# mlflow_version = saved_model.import_mlflow_version_from_managed_folder('version_id', 'managed_folder_id', path_of_model, 'code-environment-to-use')
+mlflow_version = saved_model.import_mlflow_version_from_managed_folder(version_id, 'managed_folder_id', path_of_model, 'code-environment-to-use')
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Evaluate the version using the previously created Dataset
 sm_version.set_core_metadata(target_column_name="y",
                              class_labels=["no", "yes"],
