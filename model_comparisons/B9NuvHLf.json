@@ -1,0 +1,32 @@
+{
+  "displayName": "catboost-uci-bank comparison",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1658214976559
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1658214976560
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
