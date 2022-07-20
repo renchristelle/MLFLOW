@@ -189,11 +189,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658296631112
+    "lastModifiedOn": 1658297374719
   },
   "creationTag": {
     "versionNumber": 0,
@@ -202,7 +202,7 @@
     },
     "lastModifiedOn": 1657786409848
   },
-  "description": "https://docs.google.com/presentation/d/1xSQwDdTW70RS6AHRIes71WVl6yaQ5FD4m143-l96K6M/edit#slide\u003did.g13c3cb79cc1_0_760\n\n### What is MLflow ?\nMlflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment and a central model registry.\n\n### MLflow Models\nMLflow Model is a standard format for packaging ML models that can be understood by a variety of downstream tools (eg. real-time serving through REST API or batch inference on Apache Spark). \n\nIt defines several standard “flavors” that the model can be viewed in and used.\n\nOur MLops capabilities encompass all the models created using the Dataiku interface and all the custom model created with code that are registrable in MLflow. The precise compatible list is available here.\n\n\n### MLflow Models\nMLflow Model is a standard format for packaging ML models that can be understood by a variety of downstream tools (eg. real-time serving through REST API or batch inference on Apache Spark). \n\nIt defines several standard “flavors” that the model can be viewed in and used.\n\nOur MLops capabilities encompass all the models created using the Dataiku interface and all the custom model created with code that are registrable in MLflow. The precise compatible list is available here.\n\n\n\n\n",
+  "description": "https://docs.google.com/presentation/d/1xSQwDdTW70RS6AHRIes71WVl6yaQ5FD4m143-l96K6M/edit#slide\u003did.g13c3cb79cc1_0_760\n\n### What is MLflow ?\nMlflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment and a central model registry.\n\nIt has several components:\n- MLflow Models \u003d  standard format for packaging ML models. DSS compatibility witg MLflow models allows to leverage DSS mlops capabilities  with custom code models (deployment, scoring, drift, comparison, evaluation) \n- MLflow tracking experiment \u003d API/UI to log and query experiments\n\n",
   "shortDesc": "The project *MLFlow* was created by Administrator on Jul 14th 2022",
   "tags": [],
   "customFields": {},
