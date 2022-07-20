@@ -6,5 +6,5 @@
   "rsrcPath": [
     "R"
   ],
-  "importLibrariesFromProjects": []
+  "importLibrariesFromProjects": ["MASTERCODE"]
 }
