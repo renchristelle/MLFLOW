@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658382834050
+    "lastModifiedOn": 1658382866698
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,10 +98,10 @@
       {"name":"logLoss","type":"double"},
       {"name":"lift","type":"double"},
       {"name":"calibrationLoss","type":"double"},
-      {"name":"customScore","type":"double"},
+      {"name":"customScore","type":"string"},
       {"name":"costMatrixGain","type":"double"}
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
