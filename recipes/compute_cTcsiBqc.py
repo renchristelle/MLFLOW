@@ -15,12 +15,12 @@ project = client.get_default_project()
 # get train dataset
 train_dataset = dataiku.Dataset("training_data")
 
+# get train dataset as a pandas dataframe
+df = train_dataset.get_dataframe()
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get output saved model
 sm = project.get_saved_model("VdHxdbkg")
-
-# get train dataset as a pandas dataframe
-df = train_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get the path of a local managed folder where to temporarily save the trained model
