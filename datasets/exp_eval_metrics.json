@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658382822893
+    "lastModifiedOn": 1658382834050
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,7 +86,21 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"date","type":"date"},
+      {"name":"precision","type":"double"},
+      {"name":"recall","type":"double"},
+      {"name":"auc","type":"double"},
+      {"name":"f1","type":"double"},
+      {"name":"accuracy","type":"double"},
+      {"name":"mcc","type":"double"},
+      {"name":"hammingLoss","type":"double"},
+      {"name":"logLoss","type":"double"},
+      {"name":"lift","type":"double"},
+      {"name":"calibrationLoss","type":"double"},
+      {"name":"customScore","type":"double"},
+      {"name":"costMatrixGain","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],

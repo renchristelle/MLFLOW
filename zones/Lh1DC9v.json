@@ -25,6 +25,10 @@
     {
       "objectId": "E9m5gD8w",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "evaluate_on_eval_data_prepared_1",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
