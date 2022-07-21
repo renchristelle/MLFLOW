@@ -19,10 +19,8 @@ train_dataset = dataiku.Dataset("training_data")
 df = train_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# get output saved model
-
 # Get or create SavedModel
-sm_name = "VdHxdbkg"
+sm_name = "catboost-uci-bank-trained"
 sm_id = None
 for sm in project.list_saved_models():
     if sm_name != sm["name"]:
@@ -38,8 +36,6 @@ else:
                                             prediction_type=DSSPredictionMLTaskSettings.PredictionTypes.BINARY)
     sm_id = sm.id
     print("SavedModel not found, created new one with id {}".format(sm_id))
-    
-sm = project.get_saved_model("VdHxdbkg")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get the path of a local managed folder where to temporarily save the trained model
