@@ -21,6 +21,10 @@
     {
       "objectId": "exp_eval_metrics",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "E9m5gD8w",
+      "objectType": "MODEL_EVALUATION_STORE"
     }
   ],
   "shared": [],
