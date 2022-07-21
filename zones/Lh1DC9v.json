@@ -13,6 +13,10 @@
     {
       "objectId": "I2tXhMsD",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "exp_eval_data_scored",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
