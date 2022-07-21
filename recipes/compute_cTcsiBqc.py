@@ -20,6 +20,25 @@ df = train_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get output saved model
+
+# Get or create SavedModel
+sm_name = "VdHxdbkg"
+sm_id = None
+for sm in project.list_saved_models():
+    if sm_name != sm["name"]:
+        continue
+    else:
+        sm_id = sm["id"]
+        print("Found SavedModel {} with id {}".format(sm_name, sm_id))
+        break
+if sm_id:
+    sm = project.get_saved_model(sm_id)
+else:
+    sm = project.create_mlflow_pyfunc_model(name=sm_name,
+                                            prediction_type=DSSPredictionMLTaskSettings.PredictionTypes.BINARY)
+    sm_id = sm.id
+    print("SavedModel not found, created new one with id {}".format(sm_id))
+    
 sm = project.get_saved_model("VdHxdbkg")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
