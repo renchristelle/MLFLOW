@@ -1,7 +1,48 @@
 {
   "name": "Import ML Flow models",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "eval_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "cRBpHDVc",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "recipe_from_notebook_import_mlflow_models",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "VdHxdbkg",
+      "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "evaluate_on_eval_data",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "eval_data_predictions",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "VDPcZyC2",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "score_eval_data",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "metrics",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "eval_data_scored",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
