@@ -1,7 +1,16 @@
 {
   "name": "Programmatic experiment tracking",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "project_experiment_tracking_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "8ip4v4B7",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
