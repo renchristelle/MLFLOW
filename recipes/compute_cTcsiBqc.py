@@ -16,7 +16,6 @@ project = client.get_default_project()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get train dataset
 train_dataset = dataiku.Dataset("training_data")
-evaluation_dataset = dataiku.Dataset("eval_data")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # get output saved model
