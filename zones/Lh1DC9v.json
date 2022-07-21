@@ -9,6 +9,10 @@
     {
       "objectId": "8ip4v4B7",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "I2tXhMsD",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],
