@@ -5,8 +5,6 @@ import dataiku
 import pandas as pd
 import mlflow
 from sklearn.linear_model import LogisticRegression
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 from dss_mlflow import preprocessing
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
