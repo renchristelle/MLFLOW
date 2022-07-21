@@ -17,6 +17,10 @@
     {
       "objectId": "exp_eval_data_scored",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "exp_eval_metrics",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
