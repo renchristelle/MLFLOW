@@ -68,7 +68,7 @@ else:
 # ## Step 5: import mlflow model into a SavedModel version
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Change the following values to match your setup !
+# Load MLflow model as a new version of DSS Saved Mdodel from DSS gost local filesystem
 MLFLOW_DIST_DIR = "/Users/christelleren/DSS/workspace/mlflow/mlflow-model-import/dist"
 CATBOOST_MODEL_DIR = "catboost-uci-bank-20220714-163303"
 
@@ -79,17 +79,15 @@ model_dir = os.path.join(MLFLOW_DIST_DIR, CATBOOST_MODEL_DIR)
 for v in sm.list_versions():
     if v["id"] == version_id:
         raise Exception("SavedModel version already exists! Choose a new version name.")
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Load MLflow model as a new version of DSS Saved Mdodel from DSS gost local filesystem
+        
 #sm_version = sm.import_mlflow_version_from_path(version_id=version_id,
 #                                                path=model_dir,
 #                                                code_env_name="py36_mlflow")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Load MLflow model as a new version of DSS Saved Mdodel from DSS managed folder
-sm_version = sm.import_mlflow_version_from_managed_folder(version_id=version_id, 
-                                                              managed_folder="cRBpHDVc", 
+sm_version = sm.import_mlflow_version_from_managed_folder(version_id=version_id,
+                                                              managed_folder="cRBpHDVc",
                                                               path="harizo_model",
                                                               code_env_name="py36_mlflow")
 
