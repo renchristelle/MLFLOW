@@ -3,12 +3,6 @@
   "predictionType": "BINARY_CLASSIFICATION",
   "comparedModels": [
     {
-      "smartId": "S-*-VdHxdbkg-v02",
-      "isSelected": true,
-      "color": "#1f77b4",
-      "isChampion": false
-    },
-    {
       "smartId": "ME-*-VDPcZyC2-t4552Ab9yblO",
       "isSelected": true,
       "color": "#ff7f0e",
@@ -17,6 +11,7 @@
     {
       "smartId": "S-*-z2XWRhSG-LogisticRegression_v1",
       "isSelected": true,
+      "color": "#2ca02c",
       "isChampion": false
     }
   ],
@@ -53,11 +48,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658219559918
+    "lastModifiedOn": 1664530497561
   },
   "creationTag": {
     "versionNumber": 0,
