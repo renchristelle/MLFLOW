@@ -29,6 +29,14 @@
     {
       "objectId": "evaluate_on_eval_data_prepared_1",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "eval_data_prepared_scored2",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_eval_data_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
