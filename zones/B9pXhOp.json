@@ -1,7 +1,12 @@
 {
   "name": "Visual model",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "westnile_historical",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
