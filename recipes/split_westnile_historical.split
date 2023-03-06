@@ -3,37 +3,44 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
-  "centileOrders": [],
+  "centileOrders": [
+    {
+      "column": "Date",
+      "desc": false
+    }
+  ],
   "rangeSetTime": false,
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "CENTILE",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -89,6 +96,60 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Address",
+                "type": "string"
+              },
+              {
+                "name": "Species",
+                "type": "string"
+              },
+              {
+                "name": "Block",
+                "type": "string"
+              },
+              {
+                "name": "Street",
+                "type": "string"
+              },
+              {
+                "name": "Trap",
+                "type": "string"
+              },
+              {
+                "name": "AddressNumberAndStreet",
+                "type": "string"
+              },
+              {
+                "name": "Latitude",
+                "type": "string"
+              },
+              {
+                "name": "Longitude",
+                "type": "string"
+              },
+              {
+                "name": "AddressAccuracy",
+                "type": "string"
+              },
+              {
+                "name": "NumMosquitos",
+                "type": "string"
+              },
+              {
+                "name": "WnvPresent",
+                "type": "string"
+              },
+              {
+                "name": "Date",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
