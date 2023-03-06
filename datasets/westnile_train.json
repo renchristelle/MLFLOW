@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102338163
+    "lastModifiedOn": 1678102361892
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,7 +60,20 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"Address","type":"string"},
+      {"name":"Species","type":"string"},
+      {"name":"Block","type":"string"},
+      {"name":"Street","type":"string"},
+      {"name":"Trap","type":"string"},
+      {"name":"AddressNumberAndStreet","type":"string"},
+      {"name":"Latitude","type":"string"},
+      {"name":"Longitude","type":"string"},
+      {"name":"AddressAccuracy","type":"string"},
+      {"name":"NumMosquitos","type":"string"},
+      {"name":"WnvPresent","type":"string"},
+      {"name":"Date","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
