@@ -2,7 +2,7 @@
   "type": "Filesystem",
   "managed": false,
   "featureGroup": false,
-  "formatType": "line",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -25,7 +25,34 @@
     }
   },
   "formatParams": {
-    "charset": "utf8"
+    "style": "excel",
+    "charset": "utf8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 6,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -33,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102148600
+    "lastModifiedOn": 1678102307046
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,6 +78,7 @@
     "connection": "filesystem_root",
     "path": "/Users/christelleren/DSS/data/deployment_data/westnile_historical",
     "notReadyIfEmpty": false,
+    "previewFile": "/westnile_historical_2007_05_29.csv",
     "filesSelectionRules": {
       "mode": "ALL",
       "excludeRules": [],
@@ -60,7 +88,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"line","type":"string"}
+      {"name":"col_0","type":"string"},
+      {"name":"col_1","type":"string"},
+      {"name":"col_2","type":"string"},
+      {"name":"col_3","type":"string"},
+      {"name":"col_4","type":"string"},
+      {"name":"col_5","type":"string"},
+      {"name":"col_6","type":"string"},
+      {"name":"col_7","type":"string"},
+      {"name":"col_8","type":"string"},
+      {"name":"col_9","type":"string"},
+      {"name":"col_10","type":"string"},
+      {"name":"col_11","type":"string"}
     ],
     "userModified": true
   },
