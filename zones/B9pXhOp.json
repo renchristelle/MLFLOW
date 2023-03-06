@@ -9,6 +9,10 @@
     {
       "objectId": "westnile_train",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "westnile_test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
