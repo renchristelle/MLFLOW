@@ -25,7 +25,7 @@
     }
   },
   "formatParams": {
-    "charset": "utf-8"
+    "charset": "utf8"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -33,11 +33,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102081887
+    "lastModifiedOn": 1678102148600
   },
   "creationTag": {
     "versionNumber": 0,
