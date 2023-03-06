@@ -41,8 +41,8 @@
       "\u0007",
       "\b"
     ],
-    "skipRowsBeforeHeader": 6,
-    "parseHeaderRow": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
     "probableNumberOfRecords": 0,
     "normalizeBooleans": false,
@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102307046
+    "lastModifiedOn": 1678102323087
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,18 +88,18 @@
   },
   "schema": {
     "columns": [
-      {"name":"col_0","type":"string"},
-      {"name":"col_1","type":"string"},
-      {"name":"col_2","type":"string"},
-      {"name":"col_3","type":"string"},
-      {"name":"col_4","type":"string"},
-      {"name":"col_5","type":"string"},
-      {"name":"col_6","type":"string"},
-      {"name":"col_7","type":"string"},
-      {"name":"col_8","type":"string"},
-      {"name":"col_9","type":"string"},
-      {"name":"col_10","type":"string"},
-      {"name":"col_11","type":"string"}
+      {"name":"Address","type":"string"},
+      {"name":"Species","type":"string"},
+      {"name":"Block","type":"string"},
+      {"name":"Street","type":"string"},
+      {"name":"Trap","type":"string"},
+      {"name":"AddressNumberAndStreet","type":"string"},
+      {"name":"Latitude","type":"string"},
+      {"name":"Longitude","type":"string"},
+      {"name":"AddressAccuracy","type":"string"},
+      {"name":"NumMosquitos","type":"string"},
+      {"name":"WnvPresent","type":"string"},
+      {"name":"Date","type":"string"}
     ],
     "userModified": true
   },
