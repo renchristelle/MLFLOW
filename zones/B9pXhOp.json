@@ -13,6 +13,10 @@
     {
       "objectId": "westnile_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_westnile_historical",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
