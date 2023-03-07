@@ -338,27 +338,35 @@
         "sendToInput": "main"
       },
       "Date": {
-        "generate_derivative": false,
-        "numerical_handling": "DATETIME_CYCLICAL",
-        "missing_handling": "DROP_ROW",
-        "impute_constant_value": 0.0,
-        "keep_regular": false,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "datetime_cyclical_periods": [
-          "QUARTER",
-          "YEAR",
-          "WEEK",
-          "MONTH"
-        ],
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": true,
+        "dummy_drop": "AUTO",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
         "role": "INPUT",
-        "type": "NUMERIC",
+        "type": "CATEGORY",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
-          "recordedMeaning": "Date"
+          "recordedMeaning": "DateSource"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -500,7 +508,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1031,7 +1039,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -2276,7 +2284,13 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [],
+    "custom_python": [
+      {
+        "enabled": true,
+        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, it should:\n#  1. have at least fit(X,y) and predict(X) methods\n#  2. inherit sklearn.base.BaseEstimator\n#  3. handle the attributes in the __init__ function\n#     See: https://doc.dataiku.com/dss/latest/machine-learning/custom-models.html\n\nfrom quantile_forest import RandomForestQuantileRegressor\n\nclf \u003d RandomForestQuantileRegressor()",
+        "name": "Custom Python model"
+      }
+    ],
     "plugin_python": {},
     "keras": {
       "epochs": 10,
