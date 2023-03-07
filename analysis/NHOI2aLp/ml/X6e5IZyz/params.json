@@ -72,29 +72,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "text_handling": "TOKENIZE_HASHING_SVD",
-            "minRowsRatio": 0.001,
-            "maxRowsRatio": 0.8,
-            "maxWords": 0,
-            "ngramMinSize": 1,
-            "ngramMaxSize": 1,
-            "hashSize": 200000,
-            "hashSVDSVDLimit": 50000,
-            "hashSVDSVDComponents": 100,
-            "stopWordsMode": "NONE",
-            "maxSequenceLength": 128,
-            "sentenceEmbeddingBatchSize": 32,
-            "useCustomVectorizer": false,
-            "name": "Address",
-            "role": "REJECT",
-            "type": "TEXT",
-            "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -130,29 +108,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "text_handling": "TOKENIZE_HASHING_SVD",
-            "minRowsRatio": 0.001,
-            "maxRowsRatio": 0.8,
-            "maxWords": 0,
-            "ngramMinSize": 1,
-            "ngramMaxSize": 1,
-            "hashSize": 200000,
-            "hashSVDSVDLimit": 50000,
-            "hashSVDSVDComponents": 100,
-            "stopWordsMode": "NONE",
-            "maxSequenceLength": 128,
-            "sentenceEmbeddingBatchSize": 32,
-            "useCustomVectorizer": false,
-            "name": "AddressNumberAndStreet",
-            "role": "REJECT",
-            "type": "TEXT",
-            "autoReason": "REJECT_DEFAULT_TEXT_HANDLING",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -188,25 +144,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -225,7 +163,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "AUTO",
+        "dummy_drop": "NONE",
         "impact_method": "M_ESTIMATOR",
         "impact_m": 10,
         "impact_kfold": true,
@@ -238,13 +176,14 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
+        "autoReason": "REJECT_MISSING",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -277,25 +216,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -314,7 +235,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "AUTO",
+        "dummy_drop": "NONE",
         "impact_method": "M_ESTIMATOR",
         "impact_m": 10,
         "impact_kfold": true,
@@ -327,13 +248,14 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
+        "autoReason": "REJECT_MISSING",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -366,25 +288,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -417,21 +321,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "TARGET",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "customHandlingCode": "",
@@ -466,25 +356,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -503,7 +375,7 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "AUTO",
+        "dummy_drop": "NONE",
         "impact_method": "M_ESTIMATOR",
         "impact_m": 10,
         "impact_kfold": true,
@@ -516,13 +388,14 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
+        "autoReason": "REJECT_MISSING",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -555,25 +428,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -609,37 +464,7 @@
         "type": "CATEGORY",
         "state": {
           "userModified": false,
-          "autoModifiedByDSS": true,
-          "previousSettings": {
-            "category_handling": "DUMMIFY",
-            "missing_handling": "NONE",
-            "missing_impute_with": "MODE",
-            "dummy_clip": "MAX_NB_CATEGORIES",
-            "cumulative_proportion": 0.95,
-            "min_samples": 10,
-            "max_nb_categories": 100,
-            "max_cat_safety": 200,
-            "nb_bins_hashing": 1048576,
-            "hash_whole_categories": true,
-            "dummy_drop": "AUTO",
-            "impact_method": "M_ESTIMATOR",
-            "impact_m": 10,
-            "impact_kfold": true,
-            "impact_kfold_k": 5,
-            "impact_kfold_seed": 1337,
-            "ordinal_order": "COUNT",
-            "ordinal_ascending": false,
-            "ordinal_default_mode": "HIGHEST",
-            "ordinal_default_value": 0,
-            "frequency_default_mode": "EXPLICIT",
-            "frequency_default_value": 0.0,
-            "frequency_normalized": true,
-            "role": "INPUT",
-            "type": "CATEGORY",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
+          "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
         "autoReason": "REJECT_MISSING",
@@ -740,7 +565,7 @@
           "min": 1
         },
         "values": [
-          9
+          1
         ],
         "range": {
           "min": 1,
@@ -783,7 +608,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1314,7 +1139,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -2559,13 +2384,7 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [
-      {
-        "enabled": true,
-        "code": "# This sample code uses a standard scikit-learn algorithm, the Adaboost regressor.\n\n# Your code must create a \u0027clf\u0027 variable. This clf must be a scikit-learn compatible\n# model, ie, it should:\n#  1. have at least fit(X,y) and predict(X) methods\n#  2. inherit sklearn.base.BaseEstimator\n#  3. handle the attributes in the __init__ function\n#     See: https://doc.dataiku.com/dss/latest/machine-learning/custom-models.html\n\nfrom quantile_forest import RandomForestQuantileRegressor\n\nclf \u003d RandomForestQuantileRegressor()",
-        "name": "Custom Python model"
-      }
-    ],
+    "custom_python": [],
     "plugin_python": {},
     "keras": {
       "epochs": 10,
