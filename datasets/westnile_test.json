@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678196136510
+    "lastModifiedOn": 1678196202595
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,7 @@
       {"name":"AddressAccuracy","type":"bigint"},
       {"name":"NumMosquitos","type":"bigint"},
       {"name":"WnvPresent","type":"bigint"},
-      {"name":"Date","type":"string"}
+      {"name":"Date","type":"date"}
     ],
     "userModified": true
   },
