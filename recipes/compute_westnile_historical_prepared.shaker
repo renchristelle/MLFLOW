@@ -27,8 +27,31 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "Date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -54,7 +77,21 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Address": 300,
+    "Date_parsed": 183,
+    "AddressAccuracy": 128,
+    "Trap": 100,
+    "Latitude": 106,
+    "Longitude": 113,
+    "Date": 100,
+    "AddressNumberAndStreet": 300,
+    "Block": 100,
+    "Street": 162,
+    "NumMosquitos": 105,
+    "WnvPresent": 100,
+    "Species": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
