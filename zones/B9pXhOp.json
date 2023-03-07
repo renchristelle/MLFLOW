@@ -17,6 +17,14 @@
     {
       "objectId": "split_westnile_historical",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "westnile_historical_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_westnile_historical_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
