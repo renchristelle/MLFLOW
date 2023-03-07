@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "westnile_historical",
+          "ref": "westnile_historical_prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102362095
+    "lastModifiedOn": 1678196137364
   },
   "creationTag": {
     "versionNumber": 0,

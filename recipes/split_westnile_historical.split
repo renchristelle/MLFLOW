@@ -110,7 +110,7 @@
               },
               {
                 "name": "Block",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "Street",
@@ -126,23 +126,23 @@
               },
               {
                 "name": "Latitude",
-                "type": "string"
+                "type": "double"
               },
               {
                 "name": "Longitude",
-                "type": "string"
+                "type": "double"
               },
               {
                 "name": "AddressAccuracy",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "NumMosquitos",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "WnvPresent",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "Date",
