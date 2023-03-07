@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1678102361857
+    "lastModifiedOn": 1678196136510
   },
   "creationTag": {
     "versionNumber": 0,
@@ -63,15 +63,15 @@
     "columns": [
       {"name":"Address","type":"string"},
       {"name":"Species","type":"string"},
-      {"name":"Block","type":"string"},
+      {"name":"Block","type":"bigint"},
       {"name":"Street","type":"string"},
       {"name":"Trap","type":"string"},
       {"name":"AddressNumberAndStreet","type":"string"},
-      {"name":"Latitude","type":"string"},
-      {"name":"Longitude","type":"string"},
-      {"name":"AddressAccuracy","type":"string"},
-      {"name":"NumMosquitos","type":"string"},
-      {"name":"WnvPresent","type":"string"},
+      {"name":"Latitude","type":"double"},
+      {"name":"Longitude","type":"double"},
+      {"name":"AddressAccuracy","type":"bigint"},
+      {"name":"NumMosquitos","type":"bigint"},
+      {"name":"WnvPresent","type":"bigint"},
       {"name":"Date","type":"string"}
     ],
     "userModified": true
